@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <form>
+        <!-- Nom et prénom -->
+        <label for="lastname">Prénom</label> <input id="firstname" name="firstname" type="text" placeholder="Entrez votre prénom" required>
+        <label for="firstname">Nom</label> <input id="lastname" name="lastname" type="text" placeholder="Entrez votre nom" required> 
+
+        <!-- Genre -->
+        <div>
+            <label for="male">Homme</label><input type="radio" name="gender" id="male" value="male">
+            <label for="female">Femme</label><input type="radio" name="gender" id="female" value="female">
+            <label for="other">Autre</label><input type="radio" name="gender" id="other" value="other">
+        </div>
+
+        <div>
+            <label for="email">Email</label><input name="email" type="email" id="email" required> 
+            <label for="password">Mot de passe</label><input type="password" id="password" name="password" pattern=".{5,10}" required title="Le mot de passe doit contenir entre 5 et 10 caractères"> 
+        </div>
+
+        <div>
+            <label for="day">Jour</label>
+            <select id="day" name="day">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <label for="month">Mois</label>
+            <select id="month" name="month">
+                    <option>Janvier</option>
+                    <option>Février</option>
+                    <option>Mars</option>
+            </select>
+        </div>
+
+        <label for="accord">Je confirme que je suis d'accord</label> <input type="checkbox" name="accord" id="accord">
+        <br>
+        <button>Sauvegarder</button>
+
+    </form>
+</body>
+</html>
